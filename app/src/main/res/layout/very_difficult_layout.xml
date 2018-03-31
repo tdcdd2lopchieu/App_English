@@ -8,60 +8,57 @@
     android:orientation="vertical"
     tools:context="com.nhom3.project.VeryDifficultActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="7dp"
-        android:layout_weight="7"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_margin="20dp"
+        android:layout_weight="10"
+        android:gravity="center">
+
         <FrameLayout
-            android:layout_width="300dp"
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
             android:layout_height="295dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
             android:background="@drawable/bg_ques">
+
             <WebView
                 android:id="@+id/ques"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:textColor="#000"
-                android:textSize="10pt"
+                android:layout_width="300dp"
+                android:layout_height="275dp"
+                android:layout_alignTop="@+id/txtPos"
+                android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-               ></WebView>
+                android:textColor="#000"
+                android:textSize="10pt"></WebView>
         </FrameLayout>
-
         <ImageView
             android:id="@+id/sound"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/sound" />
-    </LinearLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        >
+            android:src="@drawable/sound"
+            android:layout_below="@id/frame"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:id="@+id/btnPre"
             android:src="@drawable/prev_btn"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="50dp"
+            android:layout_below="@id/sound"
+            android:layout_marginLeft="30dp"
             />
         <TextView
             android:id="@+id/txtPos"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/btnPre"
-            android:layout_toRightOf="@+id/btnPre"
             android:text="1/10"
             android:textColor="#000"
             android:textSize="10pt"
-            android:layout_marginTop="11dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/sound"
+            android:gravity="center"
+
+
             />
         <ImageView
             android:layout_width="wrap_content"
@@ -69,13 +66,13 @@
             android:id="@+id/btnNext"
             android:src="@drawable/next_btn"
             android:layout_alignBaseline="@id/btnPre"
-            android:layout_toRightOf="@id/txtPos"
-            android:layout_marginLeft="70dp"
+            android:layout_below="@id/sound"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
             />
 
     </RelativeLayout>
     <LinearLayout
-        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
