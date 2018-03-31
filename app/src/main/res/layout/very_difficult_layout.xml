@@ -15,21 +15,25 @@
         android:layout_weight="7"
         android:gravity="center"
         android:orientation="vertical">
-        <TextView
-            android:id="@+id/ques"
+        <FrameLayout
             android:layout_width="300dp"
             android:layout_height="295dp"
-            android:background="@drawable/bg_textview"
-            android:padding="21dp"
-            android:scrollbars="vertical"
-            android:text="@string/text_ques_4"
-            android:textColor="#000"
-            android:textSize="10pt"></TextView>
-        <ImageView
+            android:background="@drawable/bg_ques">
+            <WebView
+                android:id="@+id/ques"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:textSize="10pt"
+                android:layout_gravity="center"
+               ></WebView>
+        </FrameLayout>
 
+        <ImageView
             android:id="@+id/sound"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:src="@drawable/sound" />
     </LinearLayout>
     <RelativeLayout
