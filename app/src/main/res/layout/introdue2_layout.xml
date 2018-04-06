@@ -25,7 +25,7 @@
             android:background="@drawable/bg_intro">
 
             <WebView
-                android:id="@+id/wbviewIntro4"
+                android:id="@+id/wbviewIntro2"
                 android:layout_width="300dp"
                 android:layout_height="275dp"
                 android:layout_alignTop="@+id/txtPos"

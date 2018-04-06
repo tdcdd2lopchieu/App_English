@@ -5,6 +5,6 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="text">For each question in this section, you will hear a complete paragraph on your screen. When you hear voices, you have to pick a word you hear. Then fill in the blanks. The statement will not be displayed on your test screen and will be spoken only once.</string>
     <string name="very_diff">Very Difficult</string>
+    <string name="easy">Easy</string>
 </resources>

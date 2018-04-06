@@ -20,13 +20,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:label="@string/very_diff"
-            android:name=".Introduce4Activity" />
+            android:name=".Introduce4Activity"
+            android:label="@string/very_diff" />
         <activity
             android:name=".VeryDifficultActivity"
-            android:label="@string/very_diff">
-
-        </activity>
+            android:label="@string/very_diff" />
+        <activity
+            android:name=".Introduce2Activity"
+            android:label="@string/easy" />
+        <activity android:name=".EasyActivity"
+            android:label="@string/easy" ></activity>
     </application>
 
 </manifest>
