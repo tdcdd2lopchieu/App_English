@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
-    tools:context="com.nhom3.project.VeryDifficultActivity">
+    tools:context="com.nhom3.project.EasyActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -32,7 +32,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:textColor="#000"
-                android:textSize="10pt"></WebView>
+                android:textSize="10pt">
+            </WebView>
         </FrameLayout>
 
         <ImageView
@@ -53,8 +54,6 @@
             android:layout_marginTop="10dp"
             android:layout_below="@id/frame"
             android:gravity="center"
-
-
             />
         <ImageView
             android:layout_width="wrap_content"
