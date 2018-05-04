@@ -68,7 +68,7 @@ public class EasyActivity extends AppCompatActivity {
     {
         ans = new Dialog(EasyActivity.this);
         ans.setTitle("Answer");
-        ans.setContentView(R.layout.dialog_answer4);
+        ans.setContentView(R.layout.dialog_answer_layout);
         ans.show();
     }
     public void doneclick()
