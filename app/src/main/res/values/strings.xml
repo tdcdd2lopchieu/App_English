@@ -5,5 +5,6 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="very_diff">Very Difficult</string>
+    <string name="dialog_name">Answer</string>
     <string name="easy">Easy</string>
 </resources>

@@ -31,7 +31,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:textColor="#000"
-                android:textSize="10pt"></WebView>
+                android:textSize="10pt"
+                ></WebView>
         </FrameLayout>
         <ImageView
             android:id="@+id/sound"
@@ -84,7 +85,8 @@
             android:layout_height="50dp"
             android:background="@drawable/bg_finish_btn"
             android:text="CONTINUE"
-            android:textColor="@color/colorTextBtn"/>
+            android:textColor="@color/colorTextBtn"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
