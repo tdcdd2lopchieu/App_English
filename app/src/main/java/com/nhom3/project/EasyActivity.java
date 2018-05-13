@@ -3,6 +3,7 @@ package com.nhom3.project;
 import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
@@ -25,16 +26,43 @@ public class EasyActivity extends AppCompatActivity {
         pre = (ImageView) this.findViewById(R.id.btnPre);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("file:///android_asset/webview2.html");
-        webView.setOnClickListener(new View.OnClickListener() {
+        webView.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                showdialog();
-            }
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                final Dialog dialog = new Dialog(EasyActivity.this,R.style.Dialog);
+                dialog.setTitle(getResources().getString(R.string.dialog_name));
+                dialog.setContentView(R.layout.dialog_answer_layout);
+
+                Button btnDone = (Button) dialog.findViewById(R.id.btnDone);
+                btnDone.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialog.dismiss();
+                }
+                });
+                    dialog.show();
+                return false;
+                }
         });
         finish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showdialog();
+                final Dialog dialog = new Dialog(EasyActivity.this,R.style.Dialog);
+                dialog.setTitle(getResources().getString(R.string.dialog_confirm));
+                dialog.setContentView(R.layout.dialog_confirm_layout);
+
+                Button btnYes = (Button) dialog.findViewById(R.id.btnYes);
+                Button btnNo = (Button) dialog.findViewById(R.id.btnNo);
+
+                btnNo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.show();
+
             }
         });
         nex.setOnClickListener(new View.OnClickListener() {
@@ -64,15 +92,6 @@ public class EasyActivity extends AppCompatActivity {
             kt=1;
         }
     }
-    private void showdialog()
-    {
-        ans = new Dialog(EasyActivity.this);
-        ans.setTitle("Answer");
-        ans.setContentView(R.layout.dialog_answer4);
-        ans.show();
-    }
-    public void doneclick()
-    {
-        ans.hide();
-    }
+
+
 }

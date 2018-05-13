@@ -22,7 +22,7 @@ public class VeryDifficultActivity extends AppCompatActivity {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 final Dialog dialog = new Dialog(VeryDifficultActivity.this);
-                dialog.setTitle(getResources().getString(R.string.dialog_name));
+                dialog.setTitle(R.string.dialog_name);
                 dialog.setContentView(R.layout.dialog_answer_layout);
 
                 Button btnDone = (Button) dialog.findViewById(R.id.btnDone);
