@@ -92,6 +92,20 @@ public class EasyActivity extends AppCompatActivity {
             kt=1;
         }
     }
+<<<<<<< HEAD
 
 
+=======
+    private void showdialog()
+    {
+        ans = new Dialog(EasyActivity.this);
+        ans.setTitle("Answer");
+        ans.setContentView(R.layout.dialog_answer_layout);
+        ans.show();
+    }
+    public void doneclick()
+    {
+        ans.hide();
+    }
+>>>>>>> 944bb903f718457fda69cb4c2e6123cb261af14e
 }
