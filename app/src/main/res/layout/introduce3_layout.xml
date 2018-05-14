@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.nhom3.project.Introduce4Activity"
+    tools:context="com.nhom3.project.Introduce3Activity"
     android:background="@drawable/background"
     android:orientation="vertical"
     android:gravity="center">
@@ -16,19 +16,24 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <TextView
-            android:id="@+id/text_view"
+        <FrameLayout
+            android:id="@+id/frame"
             android:layout_width="307dp"
-            android:layout_height="320dp"
-            android:background="@drawable/bg_textview"
-            android:padding="21dp"
-            android:scrollbars="vertical"
-            android:text="@string/text_ques_3"
-            android:textColor="#000"
-            android:textSize="10sp"
-            >
-        </TextView>
+            android:layout_height="295dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_intro">
 
+            <WebView
+                android:id="@+id/wbviewIntro2"
+                android:layout_width="300dp"
+                android:layout_height="275dp"
+                android:layout_alignTop="@+id/txtPos"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="10pt"></WebView>
+        </FrameLayout>
         <Button
             android:id="@+id/submit"
             android:layout_width="290dp"
