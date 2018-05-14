@@ -1,11 +1,14 @@
 <resources>
     <string name="app_name">Learning English</string>
     <string name="login_name">What\'s your name?</string>
+
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="text">For each question in this section, you will hear a complete paragraph on your screen. When you hear voices, you have to pick a word you hear. Then fill in the blanks. The statement will not be displayed on your test screen and will be spoken only once.</string>
     <string name="very_diff">Very Difficult</string>
-    <string name="dialog_name">Answer</string>
-    <string name="dialog_confirm">Quiz test?</string>
-    <string name="easy">Easy</string>
+    <string name="text_ques_4">
+It can take a long time to become successful in your chosen field, however talented you are. One thing you have to be (1)____ aware of is that you will face criticism along the way. The world is (2)____ filled of people who would rather say something negative than positive. If you’ve made up your (3)_____ to achieve a certain goal, such as writing a novel, (4)_____ the negative criticism of others prevent you from reaching your target, and let the constructive criticism have a positive effect on your work. If someone says you’re totally in the (5)____ of talent, ignore them.
+
+    </string>
 </resources>

@@ -10,11 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Introduce3Activity"
-            android:label="@string/very_diff" />
+            android:name=".LoginActivity"
+            android:label="@string/login_name" />
+        <activity android:name=".SplashActivity">
+
+        </activity>
         <activity
-            android:name=".DifficultActivity"
+            android:name=".Introduce4Activity"
+            android:label="@string/very_diff" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VeryDifficultActivity"
             android:label="@string/very_diff" />
+        <activity android:name=".LearningProcessActivity" >
+
+
+        </activity>
+        <activity android:name=".Introduce3Activity"></activity>
     </application>
 
 </manifest>
