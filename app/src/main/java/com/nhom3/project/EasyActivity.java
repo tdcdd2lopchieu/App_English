@@ -35,14 +35,14 @@ public class EasyActivity extends AppCompatActivity {
 
                 Button btnDone = (Button) dialog.findViewById(R.id.btnDone);
                 btnDone.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        dialog.dismiss();
-                    }
+                @Override
+                public void onClick(View view) {
+                    dialog.dismiss();
+                }
                 });
-                dialog.show();
+                    dialog.show();
                 return false;
-            }
+                }
         });
         finish.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,6 +92,7 @@ public class EasyActivity extends AppCompatActivity {
             kt=1;
         }
     }
+
     private void showdialog()
     {
         ans = new Dialog(EasyActivity.this);
@@ -103,4 +104,5 @@ public class EasyActivity extends AppCompatActivity {
     {
         ans.hide();
     }
+
 }
