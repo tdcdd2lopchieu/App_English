@@ -9,7 +9,10 @@
     <string name="dialog_name">Answer</string>
     <string name="dialog_confirm">Quiz test?</string>
     <string name="easy">Easy</string>
+<<<<<<< HEAD
 =======
     <string name="app_name">didong</string>
 >>>>>>> 51b60b843f4f4290a4b1ffd6834cf1d522bfc208
+=======
+>>>>>>> 2433099a601d67dfb118f221c3895407c25cdbcf
 </resources>

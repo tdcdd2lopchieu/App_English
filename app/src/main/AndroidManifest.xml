@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+<<<<<<< HEAD
             android:name=".LoginActivity"
             android:label="@string/login_name" />
         <activity android:name=".SplashActivity">
@@ -30,6 +31,13 @@
             android:label="@string/easy" />
         <activity android:name=".EasyActivity"
             android:label="@string/easy" ></activity>
+=======
+            android:name=".Introduce3Activity"
+            android:label="@string/very_diff" />
+        <activity
+            android:name=".DifficultActivity"
+            android:label="@string/very_diff" />
+>>>>>>> 2433099a601d67dfb118f221c3895407c25cdbcf
     </application>
 
 </manifest>
