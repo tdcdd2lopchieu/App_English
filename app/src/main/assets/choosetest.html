@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            background: #D7FADD;
+        }
+        @font-face {
+        font-family: 'roboto';
+        src: url('Roboto-Light.ttf');
+        }
+
+        @font-face {
+         font-family: 'roboto-medium';
+         src: url('Roboto-Medium.ttf');
+        }
+
+        .ques{
+            text-align: justify;
+            margin: 10px;
+        }
+        .greenclass{
+            border: solid 5px green; border-radius: 10px;
+        }
+        .redclass{
+            border: solid 5px red; border-radius: 10px;
+        }
+        .im{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="bg">
+    <table >
+        <tr>
+            <td>
+                                <img class="im" id="img1" src="img_test1.png" onclick="myFunction(1)" />
+                                <img class="im"  id="img2" src="img_test2.png" onclick="myFunction(2)" /><br>
+                                <img class="im"  id="img3" src="img_test3.png" onclick="myFunction(3)" />
+                                <img class="im"  id="img4" src="img_test4.png" onclick="myFunction(4)" />
+            </td>
+
+        </tr>
+    </table>
+</div>
+<script type="text/javascript">
+
+function myFunction(code) {
+    if(code == 1){
+    var change =  document.getElementById("img1");
+    change.classList.add("greenclass");
+    var remove =  document.getElementById("img2");
+    remove.classList.remove("greenclass");
+    var remove2 =  document.getElementById("img3");
+    remove2.classList.remove("greenclass");
+    var remove3 =  document.getElementById("img4");
+    remove3.classList.remove("greenclass");
+    }
+    if(code == 2){
+    var change =  document.getElementById("img2");
+    change.classList.add("greenclass");
+    var remove =  document.getElementById("img1");
+    remove.classList.remove("greenclass");
+    var remove2 =  document.getElementById("img3");
+    remove2.classList.remove("greenclass");
+    var remove3 =  document.getElementById("img4");
+    remove3.classList.remove("greenclass");
+    }
+    if(code == 3){
+    var change =  document.getElementById("img3");
+    change.classList.add("greenclass");
+    var remove =  document.getElementById("img1");
+    remove.classList.remove("greenclass");
+    var remove2 =  document.getElementById("img2");
+    remove2.classList.remove("greenclass");
+    var remove3 =  document.getElementById("img4");
+    remove3.classList.remove("greenclass");
+
+    }
+    if(code == 4){
+    var change =  document.getElementById("img4");
+    change.classList.add("greenclass");
+    var remove =  document.getElementById("img1");
+    remove.classList.remove("greenclass");
+    var remove2 =  document.getElementById("img2");
+    remove2.classList.remove("greenclass");
+    var remove3 =  document.getElementById("img3");
+    remove3.classList.remove("greenclass");
+
+    }
+    
+
+}
+</script>
+
+</body>
+</html>
