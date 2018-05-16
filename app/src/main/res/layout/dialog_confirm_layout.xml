@@ -16,7 +16,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Do you want finish this test?"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"/>
 
     </LinearLayout>
     <LinearLayout

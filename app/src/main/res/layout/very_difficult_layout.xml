@@ -84,7 +84,7 @@
             android:layout_width="172dp"
             android:layout_height="50dp"
             android:background="@drawable/bg_finish_btn"
-            android:text="CONTINUE"
+            android:text="FINISH"
             android:textColor="@color/colorTextBtn"
             />
     </LinearLayout>
