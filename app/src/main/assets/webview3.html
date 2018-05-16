@@ -23,21 +23,54 @@
             text-align: justify;
             margin: 10px;
         }
+        .greenclass{
+            border: solid 5px green; border-radius: 10px;
+        }
     </style>
 </head>
 <body>
 <div class="bg">
-    <table>
+    <table >
         <tr>
             <td>
-                <img src="img_part_3_1.png" /><br>
-                <img src="img_part_3_3.png" /><br>
-                <img src="img_part_3_2.png" />
+                                <img  id="img1" src="img_part_3_1.png" onclick="myFunction(1)" /><br>
+                                <img  id="img2" src="img_part_3_3.png" onclick="myFunction(2)" /><br>
+                                <img  id="img3" src="img_part_3_2.png" onclick="myFunction(3)" />
             </td>
 
         </tr>
     </table>
 </div>
+<script type="text/javascript">
+
+function myFunction(code) {
+    if(code == 1){
+    var change =  document.getElementById("img1");
+    change.classList.add("greenclass");
+    var remove =  document.getElementById("img2");
+    remove.classList.remove("greenclass");
+    var remove2 =  document.getElementById("img3");
+    remove2.classList.remove("greenclass");
+    }
+    if(code == 2){
+    var change =  document.getElementById("img2");
+    change.classList.add("greenclass");
+    var remove =  document.getElementById("img1");
+    remove.classList.remove("greenclass");
+    var remove2 =  document.getElementById("img3");
+    remove2.classList.remove("greenclass");
+    }
+    if(code == 3){
+    var change =  document.getElementById("img3");
+    change.classList.add("greenclass");
+    var remove =  document.getElementById("img1");
+    remove.classList.remove("greenclass");
+    var remove2 =  document.getElementById("img2");
+    remove2.classList.remove("greenclass");
+    }
+
+}
+</script>
 
 </body>
 </html>
