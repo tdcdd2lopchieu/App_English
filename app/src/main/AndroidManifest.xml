@@ -38,7 +38,8 @@
             android:name=".DifficultActivity"
             android:label="@string/very_diff" />
         <activity android:name=".LearningProcessActivity" />
-        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".VeryEasyActivity"></activity>
     </application>
 
 </manifest>

@@ -15,6 +15,7 @@
     <string name="total_test">Total test: </string>
 
     <string name="choose_test">Choose Test</string>
+    <string name="choose_test_title">Please choose a package</string>
 
     <string name="user_name"></string>
 

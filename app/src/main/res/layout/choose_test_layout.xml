@@ -8,32 +8,81 @@
     android:background="@drawable/background"
     android:orientation="vertical"
     android:gravity="center">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:textColor="000"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_test_title"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:gravity="center"
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="@dimen/margin10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_test1" />
+
+                <ImageView
+                    android:layout_margin="@dimen/margin10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_test2" />
+
+            </TableRow>
+            <TableRow
+                android:gravity="center"
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="@dimen/margin10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_test3" />
+                <ImageView
+                    android:layout_margin="@dimen/margin10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_test4" />
+
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="9"
+        android:layout_weight="2"
         android:orientation="vertical"
         android:gravity="center">
 
-        <FrameLayout
-            android:id="@+id/frame"
-            android:layout_width="307dp"
-            android:layout_height="295dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/bg_intro">
 
-            <WebView
-                android:id="@+id/wbviewchoosetest"
-                android:layout_width="300dp"
-                android:layout_height="275dp"
-                android:layout_alignTop="@+id/txtPos"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:textColor="#000"
-                android:textSize="10pt"></WebView>
-        </FrameLayout>
         <Button
             android:id="@+id/submit"
             android:layout_width="290dp"
@@ -49,7 +98,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:orientation="horizontal"
         android:gravity="center">
         <TextView
