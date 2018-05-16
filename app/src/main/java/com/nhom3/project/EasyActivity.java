@@ -83,12 +83,12 @@ public class EasyActivity extends AppCompatActivity {
     {
         if (kt==1)
         {
-            webView.loadUrl("file:///android_asset/webview2.html");
+            webView.loadUrl("file:///android_asset/webview1.html");
             kt=0;
         }
         else
         {
-            webView.loadUrl("file:///android_asset/webview4.html");
+            webView.loadUrl("file:///android_asset/webview2.html");
             kt=1;
         }
     }

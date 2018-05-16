@@ -29,7 +29,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/edit_text_border"
-        android:text="CONTINUE"
+        android:text="VERY EASY"
         android:backgroundTint="@color/colorBtnVrEs"
         android:textColor="@color/colorTextBtn"/>
     <Button
@@ -40,7 +40,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/edit_text_border"
-        android:text="CONTINUE"
+        android:text="EASY"
         android:backgroundTint="@color/colorBtnEasy"
         android:textColor="@color/colorTextBtn"/>
     <Button
@@ -51,7 +51,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/edit_text_border"
-        android:text="CONTINUE"
+        android:text="DIFFICULT"
         android:backgroundTint="@color/colorBtnDiff"
         android:textColor="@color/colorTextBtn"/>
     <Button
@@ -62,7 +62,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/edit_text_border"
-        android:text="CONTINUE"
+        android:text="VERY DIFICULT"
         android:backgroundTint="@color/colorBtnVrDiff"
         android:textColor="@color/colorTextBtn"/>
 

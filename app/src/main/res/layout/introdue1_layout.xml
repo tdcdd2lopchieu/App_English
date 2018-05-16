@@ -33,7 +33,7 @@
                 android:textSize="10pt"></WebView>
         </FrameLayout>
         <Button
-            android:id="@+id/submit"
+            android:id="@+id/btnIntro1"
             android:layout_width="290dp"
             android:layout_height="60dp"
             android:layout_marginTop="25dp"
