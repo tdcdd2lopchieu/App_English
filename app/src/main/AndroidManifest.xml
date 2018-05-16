@@ -28,14 +28,16 @@
         <activity
             android:name=".Introduce2Activity"
             android:label="@string/easy" />
-        <activity android:name=".EasyActivity"
-            android:label="@string/easy" ></activity>
-		<activity
+        <activity
+            android:name=".EasyActivity"
+            android:label="@string/easy" />
+        <activity
             android:name=".Introduce3Activity"
             android:label="@string/very_diff" />
         <activity
             android:name=".DifficultActivity"
             android:label="@string/very_diff" />
+        <activity android:name=".LearningProcessActivity" />
     </application>
 
 </manifest>
