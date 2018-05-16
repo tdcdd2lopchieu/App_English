@@ -26,6 +26,9 @@
         .greenclass{
             border: solid 5px green; border-radius: 10px;
         }
+        .redclass{
+            border: solid 5px red; border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -46,28 +49,32 @@
 function myFunction(code) {
     if(code == 1){
     var change =  document.getElementById("img1");
-    change.classList.add("greenclass");
+    change.classList.add("redclass");
     var remove =  document.getElementById("img2");
     remove.classList.remove("greenclass");
     var remove2 =  document.getElementById("img3");
-    remove2.classList.remove("greenclass");
+    remove2.classList.remove("redclass");
+    alert("Sai");
     }
     if(code == 2){
     var change =  document.getElementById("img2");
     change.classList.add("greenclass");
     var remove =  document.getElementById("img1");
-    remove.classList.remove("greenclass");
+    remove.classList.remove("redclass");
     var remove2 =  document.getElementById("img3");
-    remove2.classList.remove("greenclass");
+    remove2.classList.remove("redclass");
+    alert("Đúng");
     }
     if(code == 3){
     var change =  document.getElementById("img3");
-    change.classList.add("greenclass");
+    change.classList.add("redclass");
     var remove =  document.getElementById("img1");
-    remove.classList.remove("greenclass");
+    remove.classList.remove("redclass");
     var remove2 =  document.getElementById("img2");
     remove2.classList.remove("greenclass");
+    alert("Sai");
     }
+    
 
 }
 </script>
