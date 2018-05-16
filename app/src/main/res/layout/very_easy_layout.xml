@@ -41,45 +41,43 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
-                <LinearLayout
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton1"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="4"
-                    android:orientation="vertical"
-                    >
-                        <RadioButton
-                            android:id="@+id/radioButton1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Đáp án 1"
-                            android:background="@color/colorRadio"
-                             />
-                        <RadioButton
-                            android:id="@+id/radioButton2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Đáp án 2"
-                            android:layout_marginTop="15dp"
-                            android:background="@color/colorRadio"
-                            />
-                        <RadioButton
-                            android:id="@+id/radioButton3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Đáp án 3"
-                            android:layout_marginTop="15dp"
-                            android:background="@color/colorRadio"
-                            />
-                        <RadioButton
-                            android:id="@+id/radioButton4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Đáp án 4"
-                            android:layout_marginTop="15dp"
-                            android:background="@color/colorRadio"
-                            />
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:text="Đáp án 1"
+                    android:background="@color/colorRadio"
+                    android:textColor="#fff"
+                     />
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đáp án 2"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorRadio"
+                    android:textColor="#fff"
+                    />
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đáp án 3"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorRadio"
+                    android:textColor="#fff"
+                    />
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đáp án 4"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorRadio"
+                    android:textColor="#fff"
+                    />
 
         </RadioGroup>
 
