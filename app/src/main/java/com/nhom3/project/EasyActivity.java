@@ -92,10 +92,7 @@ public class EasyActivity extends AppCompatActivity {
             kt=1;
         }
     }
-<<<<<<< HEAD
 
-
-=======
     private void showdialog()
     {
         ans = new Dialog(EasyActivity.this);
@@ -107,5 +104,5 @@ public class EasyActivity extends AppCompatActivity {
     {
         ans.hide();
     }
->>>>>>> 944bb903f718457fda69cb4c2e6123cb261af14e
+
 }
