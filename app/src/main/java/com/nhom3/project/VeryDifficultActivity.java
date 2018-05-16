@@ -1,6 +1,7 @@
 package com.nhom3.project;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -85,11 +86,22 @@ public class VeryDifficultActivity extends AppCompatActivity {
                     }
                 });
 
+                btnYes.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(VeryDifficultActivity.this, ResultActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        startActivity(intent);
+                    }
+                });
+
                 dialog.show();
 
             }
         });
     }
+
+
 
 
 }
