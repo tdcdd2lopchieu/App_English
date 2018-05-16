@@ -12,7 +12,7 @@
         android:layout_height="200dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:background="@drawable/bg_ques">
 
         <WebView
@@ -56,7 +56,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Đáp án 2"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:background="@color/colorRadio"
                     android:textColor="#fff"
                     />
@@ -65,7 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Đáp án 3"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:background="@color/colorRadio"
                     android:textColor="#fff"
                     />
@@ -74,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Đáp án 4"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:background="@color/colorRadio"
                     android:textColor="#fff"
                     />
@@ -82,7 +82,47 @@
         </RadioGroup>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/btnPre"
+            android:src="@drawable/prev_btn"
+            android:layout_below="@id/sound"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/txtPos"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/10"
+            android:textColor="#000"
+            android:textSize="10pt"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/sound"
+            android:gravity="center"
+
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/btnNext"
+            android:src="@drawable/next_btn"
+            android:layout_alignBaseline="@id/btnPre"
+            android:layout_below="@id/sound"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            />
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

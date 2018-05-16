@@ -19,27 +19,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Introduce4Activity"
-            android:label="@string/very_diff" />
+
         <activity
             android:name=".VeryDifficultActivity"
             android:label="@string/very_diff" />
+        <activity android:name=".Introduce1Activity">
+
+        </activity>
         <activity
             android:name=".Introduce2Activity"
             android:label="@string/easy" />
         <activity
-            android:name=".EasyActivity"
-            android:label="@string/easy" />
-        <activity
             android:name=".Introduce3Activity"
             android:label="@string/very_diff" />
+        <activity
+            android:name=".Introduce4Activity"
+            android:label="@string/very_diff" />
+        <activity
+            android:name=".EasyActivity"
+            android:label="@string/easy" />
+
         <activity
             android:name=".DifficultActivity"
             android:label="@string/very_diff" />
         <activity android:name=".LearningProcessActivity" />
         <activity android:name=".ResultActivity" />
         <activity android:name=".VeryEasyActivity"></activity>
+        <activity android:name=".ChooseLevelActivity"></activity>
+        <activity android:name=".ChooseTestActivity"></activity>
+
+
     </application>
 
 </manifest>

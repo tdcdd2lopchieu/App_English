@@ -18,7 +18,7 @@ public class LearningProcessActivity extends AppCompatActivity {
         btnLearnPRC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LearningProcessActivity.this, ChooseLevelActivity.class);
+                Intent intent = new Intent(LearningProcessActivity.this, ChooseTestActivity.class);
                 startActivity(intent);
             }
         });
