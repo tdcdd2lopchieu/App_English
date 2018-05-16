@@ -94,7 +94,6 @@
             android:layout_height="50dp"
             android:id="@+id/btnPre"
             android:src="@drawable/prev_btn"
-            android:layout_below="@id/sound"
             android:layout_marginLeft="30dp"
             />
         <TextView
@@ -113,12 +112,12 @@
 
             />
         <ImageView
+            android:id="@+id/btnNex"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:id="@+id/btnNext"
+
             android:src="@drawable/next_btn"
             android:layout_alignBaseline="@id/btnPre"
-            android:layout_below="@id/sound"
             android:layout_alignParentRight="true"
             android:layout_marginRight="30dp"
             />

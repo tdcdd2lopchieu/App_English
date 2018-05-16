@@ -57,14 +57,14 @@ public class VeryDifficultActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(VeryDifficultActivity.this,"Next question",Toast.LENGTH_LONG).show();
+                Toast.makeText(VeryDifficultActivity.this,"Next question",Toast.LENGTH_SHORT).show();
             }
         });
 
         btnPrev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(VeryDifficultActivity.this,"Previous question",Toast.LENGTH_LONG).show();
+                Toast.makeText(VeryDifficultActivity.this,"Previous question",Toast.LENGTH_SHORT).show();
             }
         });
 
