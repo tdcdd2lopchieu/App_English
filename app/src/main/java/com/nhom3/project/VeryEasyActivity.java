@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class VeryEasyActivity extends AppCompatActivity {
 
@@ -22,9 +24,26 @@ public class VeryEasyActivity extends AppCompatActivity {
         RadioButton radB = (RadioButton) findViewById(R.id.radioButton2);
         RadioButton radC = (RadioButton) findViewById(R.id.radioButton3);
         RadioButton radD = (RadioButton) findViewById(R.id.radioButton4);
+        ImageView btnNex = (ImageView) findViewById(R.id.btnNex);
+        ImageView btnPre = (ImageView) findViewById(R.id.btnPre);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("file:///android_asset/webview4.html");
 
+
+        btnPre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(VeryEasyActivity.this,"Preview",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnNex.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(VeryEasyActivity.this, Introduce2Activity.class);
+                startActivity(intent);
+            }
+        });
 
         btnFinish.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,5 +74,8 @@ public class VeryEasyActivity extends AppCompatActivity {
                 dialog.show();
             }
         });
+
+
+
     }
 }

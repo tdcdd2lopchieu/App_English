@@ -43,7 +43,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:id="@+id/btnPre"
+            android:id="@+id/btnPrev"
             android:src="@drawable/prev_btn"
             android:layout_below="@id/sound"
             android:layout_marginLeft="30dp"
@@ -80,7 +80,7 @@
         android:orientation="horizontal"
         android:gravity="center">
         <Button
-            android:id="@+id/submit"
+            android:id="@+id/btnDiff"
             android:layout_width="172dp"
             android:layout_height="50dp"
             android:background="@drawable/bg_finish_btn"
