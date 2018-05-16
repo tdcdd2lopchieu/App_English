@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
-    tools:context="com.nhom3.project.EasyActivity">
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -21,6 +21,27 @@
             android:layout_height="295dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+<<<<<<< HEAD:app/src/main/res/layout/very_difficult_layout.xml
+            android:background="@drawable/bg_ques">
+
+            <WebView
+                android:id="@+id/ques"
+                android:layout_width="300dp"
+                android:layout_height="275dp"
+                android:layout_alignTop="@+id/txtPos"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="10pt"
+                ></WebView>
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/sound"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sound"
+            android:layout_below="@id/frame"/>
+=======
             android:layout_marginBottom="20dp"
             android:background="@drawable/bg_ques">
 
@@ -36,12 +57,17 @@
             </WebView>
         </FrameLayout>
 
+>>>>>>> 51b60b843f4f4290a4b1ffd6834cf1d522bfc208:app/src/main/res/layout/easy_layout.xml
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:id="@+id/btnPre"
             android:src="@drawable/prev_btn"
+<<<<<<< HEAD:app/src/main/res/layout/very_difficult_layout.xml
+            android:layout_below="@id/sound"
+=======
             android:layout_below="@id/frame"
+>>>>>>> 51b60b843f4f4290a4b1ffd6834cf1d522bfc208:app/src/main/res/layout/easy_layout.xml
             android:layout_marginLeft="30dp"
             />
         <TextView
@@ -51,9 +77,17 @@
             android:text="1/10"
             android:textColor="#000"
             android:textSize="10pt"
+<<<<<<< HEAD:app/src/main/res/layout/very_difficult_layout.xml
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/sound"
+            android:gravity="center"
+
+
+=======
             android:layout_marginTop="10dp"
             android:layout_below="@id/frame"
             android:gravity="center"
+>>>>>>> 51b60b843f4f4290a4b1ffd6834cf1d522bfc208:app/src/main/res/layout/easy_layout.xml
             />
         <ImageView
             android:layout_width="wrap_content"
@@ -61,7 +95,11 @@
             android:id="@+id/btnNext"
             android:src="@drawable/next_btn"
             android:layout_alignBaseline="@id/btnPre"
+<<<<<<< HEAD:app/src/main/res/layout/very_difficult_layout.xml
+            android:layout_below="@id/sound"
+=======
             android:layout_below="@id/frame"
+>>>>>>> 51b60b843f4f4290a4b1ffd6834cf1d522bfc208:app/src/main/res/layout/easy_layout.xml
             android:layout_alignParentRight="true"
             android:layout_marginRight="30dp"
             />
@@ -78,8 +116,14 @@
             android:layout_width="172dp"
             android:layout_height="50dp"
             android:background="@drawable/bg_finish_btn"
+<<<<<<< HEAD:app/src/main/res/layout/very_difficult_layout.xml
+            android:text="CONTINUE"
+            android:textColor="@color/colorTextBtn"
+            />
+=======
             android:text="FINISH"
             android:textColor="@color/colorTextBtn"/>
+>>>>>>> 51b60b843f4f4290a4b1ffd6834cf1d522bfc208:app/src/main/res/layout/easy_layout.xml
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

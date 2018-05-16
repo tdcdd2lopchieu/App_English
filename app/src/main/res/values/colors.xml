@@ -8,4 +8,9 @@
     <color name="colorBtn">#2F80ED</color>
     <color name="colorTextBtn">#fff</color>
     <color name="black_overlay">#66000000</color>
+    <color name="colorBtnVrEs">#8DB8F2</color>
+    <color name="colorBtnEasy">#6CA2EB</color>
+    <color name="colorBtnDiff">#2D72CF</color>
+    <color name="colorBtnVrDiff">#02449E</color>
+    <color name="colorRadio">#02449E</color>
 </resources>
