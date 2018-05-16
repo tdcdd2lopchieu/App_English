@@ -5,25 +5,36 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import com.nhom3.project.data_models.NhanSu;
+import com.nhom3.project.data_models.Questions;
+import com.nhom3.project.data_models.Users;
 
 /**
  * Created by IT on 10/25/2017.
  */
 
 public class MyDatabaseHelper extends SQLiteOpenHelper {
-    private static  final String DB_NAME = "project";
+    private static  final String DB_NAME = "appEng";
     private static  final int BD_VERSION = 1;
 
-    public  static  final  String DB_TABLE_USER= "user";
-    private static  final  String COLUM_ID = "_id";
-    private static  final  String COLUM_NAME = "ho_ten";
-    private static  final  String COLUM_DEGREE = "bang_cap";
-    private static  final  String COLUM_HOBBIES = "so_thich";
+    //table users
+    public  static  final  String DB_TABLE_USER= "users";
+    private static  final  String COLUM_USER_ID = "_id";
+    private static  final  String COLUM_NAME = "name";
+    private static  final  String COLUM_TEST_ID = "test_id";
+
+    //table questions
+    public  static  final  String DB_TABLE_QUES= "questions";
+    private static  final  String COLUM_QUES_ID = "_id";
+    private  static  final  String COLUM_TYPE= "type";
+    private  static  final  String COLUM_DESC= "description";
+    private  static  final  String COLUM_CONTENT= "content";
+    private  static  final  String COLUM_SCORE= "score";
+    private  static  final  String COLUM_SOUND= "sound";
+    private  static  final  String COLUM_IMG= "image";
+
 
     public MyDatabaseHelper(Context context) {
         super(context, DB_NAME, null,BD_VERSION);
@@ -34,42 +45,52 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(
                 "CREATE TABLE " + DB_TABLE_USER + "(" +
-                        COLUM_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                        COLUM_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
                         COLUM_NAME + " TEXT," +
-                        COLUM_DEGREE + " INTEGER," +
-                        COLUM_HOBBIES + " TEXT)"
+                        COLUM_TEST_ID + " INTEGER)"
+        );
+        sqLiteDatabase.execSQL(
+                "CREATE TABLE " + DB_TABLE_QUES + "(" +
+                        COLUM_QUES_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                        COLUM_TYPE + " INTEGER," +
+                        COLUM_DESC + " TEXT," +
+                        COLUM_CONTENT + " TEXT," +
+                        COLUM_SCORE + " INTEGER," +
+                        COLUM_SOUND + " TEXT," +
+                        COLUM_IMG + " TEXT)"
         );
     }
 
-    public void saveDatabase (ArrayList<NhanSu> nhanSus)
-    {
-        SQLiteDatabase db = getWritableDatabase();
-        for (NhanSu nhanVien:nhanSus)
-        {
-            ContentValues values = new ContentValues();
-            values.put(COLUM_NAME,nhanVien.getName());
-            values.put(COLUM_DEGREE,nhanVien.getDegreen());
-            values.put(COLUM_HOBBIES,nhanVien.getHobby());
-            db.insert(DB_TABLE_USER,null,values);
-        }
-        db.close();
-    }
 
-    public  void  loadDatabse(ArrayList<NhanSu> nhanSus)
+    public  void  loadDatabse(ArrayList<Questions> questions)
     {
         SQLiteDatabase db = getWritableDatabase();
-        Cursor cursor = db.query(DB_TABLE_USER,new String[] {COLUM_NAME,COLUM_DEGREE,COLUM_HOBBIES}, null,null,null,null,null);
+        Cursor cursor = db.query(DB_TABLE_QUES,new String[] {COLUM_TYPE,COLUM_DESC,COLUM_CONTENT,COLUM_SCORE,COLUM_SOUND,COLUM_IMG}, null,null,null,null,null);
 
         if(cursor.moveToFirst())
         {
             do {
-                String name = cursor.getString(cursor.getColumnIndex(COLUM_NAME));
-                int degree = Integer.parseInt(cursor.getString(cursor.getColumnIndex(COLUM_DEGREE)));
-                String hobby = cursor.getString(cursor.getColumnIndex(COLUM_HOBBIES));
-                nhanSus.add(new NhanSu(name,degree,hobby));
+                int type = Integer.parseInt(cursor.getString(cursor.getColumnIndex(COLUM_TYPE)));
+                int score = Integer.parseInt(cursor.getString(cursor.getColumnIndex(COLUM_SCORE)));
+                String decs = cursor.getString(cursor.getColumnIndex(COLUM_DESC));
+                String content = cursor.getString(cursor.getColumnIndex(COLUM_CONTENT));
+                String sound = cursor.getString(cursor.getColumnIndex(COLUM_SOUND));
+                String img = cursor.getString(cursor.getColumnIndex(COLUM_IMG));
+                questions.add(new Questions(type,decs,content,score,sound,img));
 
             }while (cursor.moveToNext());
         }
+
+        db.close();
+    }
+
+    public  void  saveUser(Users user)
+    {
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUM_NAME,user.getUserName());
+        values.put(COLUM_TEST_ID,0);
+        db.insert(DB_TABLE_USER,null,values);
 
         db.close();
     }
